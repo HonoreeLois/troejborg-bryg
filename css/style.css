@@ -1,41 +1,420 @@
-body {
-    /* Base styles go here */
+
+/* Reset default style */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+
+ h1, h2, h3, h4 {
+    font-family: 'montserrat'
+}
+  
+  
+  /* setting font */
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffebd2;
   }
   
-  .forside-billede {
-    position: fixed; /* or 'absolute' if you don't want it to stay in place on scroll */
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1; /* Ensures the image stays behind other content */
+  nav {
+    background-color: #102e48;
   }
   
-  .forside-billede img {
+
+  /* height og  width i nav container */
+  
+  /* nav {
+    display: flex;
+    flex-direction: row;
+
+    background-color:#102e48;
+    height: 118px;
+    width: 100%;
+    z-index: 10;
+
+} */
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #102e48;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.nav-iconer {
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    justify-content: center;
+    right: 30px;
+}
+
+.nav-iconer {
+    display:inline-block;
+    color: #f28a33;
+    align-items: center;
+
+}
+
+
+/* Style  logo */
+.logo {
+    position: absolute;
+    top: -30px; 
+    left: 0;
+    z-index: 10;
+}
+
+.logo img {
+    /* display: block;
+    width: 14%; 
     height: auto;
+    margin: 0; 
+    margin-top: 4.5%;
+    margin-left: 3%; */
+}
+
+img#brand-logo {
+    height: auto;
+    width: 97%;
+}
+
+.logo-container {
+    width: 20%;
+    height: 150px;
+    z-index: 1;
+}
+
+/* Style nav */
+  /* nav ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: -106px ;
+    margin-top: 23px;
+  }
+   */
+
+/* Style nav */
+   nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+  
+  
+  /* Style  nav */
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  
+  /* Style link insde i nav */
+  
+  nav ul li a {
+    color: #f28a33;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  
+ 
+  /* Style the active link */
+  
+  a:active,
+  a:hover {
+    background-color: white;
+    transition: .5s;
+  }
+  
+
+  
+  nav ul li a {
+    color: #f28a33;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* style label checkbtn class */
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+  
+
+  /* styling the input tag  */
+#check {
+    display: none;
+}
+  
+  
+  /* styling the label checkbtn class - display none*/
+.checkbtn {
+    font-size: 50px;
+    color: #f28a33;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* forside to styles */
+.forside-top {
+    position: relative;
+    text-align: center;
+    color: white; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* .forside-top h1 {
+    font-size: 4em; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+} */
+
+.forside-billede {
+    position: relative;
+    margin-top: 0%;
+}
+
+.forside-billede img {
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    margin-top: -34px;
+    
+}
+
+.knap{
+    position: absolute;
+    top: 78%; 
+    left: 48%; 
+    transform: translate(-50%, -50%); 
+}
+
+button {
+    background-color: #f28a33; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase; 
+    color: #ffebd2;
+}
+
+
+.forsideknap button:hover {
+    background-color:#102e48; 
+}
+
+
+/* anden section i main styles */
+
+img.baggrund-image {
+    position: absolute;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+}
+
+.kampagne-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+
+}
+
+
+.kampagne-content{
+    display: grid;
+    position: relative;
+    z-index: 1;
+}
+/* .kampagne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     background-size: cover;
-    background-position: center;
-  }
-  
-  /*  iPads */
-  @media only screen and (min-width: 768px) {
-    /* Styles for iPad go here */
-  }
-  
-  /* Desktop */
-  @media only screen and (min-width: 1280px) {
-    /* Styles for desktops go here */
-  }
+} */
+
+.kampagne-content h2 {
+    color: #f28a33;
+    display: grid;
+    justify-content: start;
+    padding: 40px;
+    margin-bottom: 20px;
+    font-size: 65px;
+}
+
+.kampagne-content img{
+   
+}
+
+.textbox{
+    flex-basis: 50%;
+
+}
+
+
+@media(max-width: 600px) {
+ 
+.logo{
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+img#brand-logo {
+    height: auto;
+    width: 147%;
+}
+
+.logo-container {
+    width: 20%;
+    height: 5px;
+}
+
+ nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #102e48;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+}
+
+
+ nav ul li a{
+  font-size: 16px;
+ }
+
+ h1{
+  padding-top: 20px;
+ }
+
+.forside-top h1 {
+    font-size: 2.5em; 
+}
+
+}
+
+
+@media(max-width: 925px){
+img#brand-logo {
+    height: auto;
+    width: 110%;
+}
+
+.logo-container {
+    width: 16%;
+    height: 47px;
+}
+
+.nav-menu {
+    height: 90px;
+    
+}
+
+nav{
+    position: fixed;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #102e48;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-around;
+    height: 86px;
+}
+
+nav ul li{
+ display: block;
+}
+
+.checkbtn{
+
+ display: block;
+}
+
+#check:checked ~ ul { 
+    left: 0;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 1000vh;
+    background: #102e48;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+
+ul{
+ left: 100%;
+ transition: all 3.5s;
+}
+
+ 
+ 
+
+
+
+
+nav ul li {
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+
+.forside-billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: -12px;
+}
+
+}
+
+
+@media screen and (min-width: 925px) and (max-width: 1440px) {
+
+img#brand-logo {
+    height: auto;
+    width: 134%;
+}
+}

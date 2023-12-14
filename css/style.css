@@ -1,6 +1,3 @@
-
-/* Reset default style */
-
 * {
     padding: 0;
     margin: 0;
@@ -13,17 +10,22 @@
     font-family: 'montserrat'
 }
   
+/*fjerner link farve*/
+a {
+    color: inherit;
+    text-decoration: none; 
+}
   
   /* setting font */
   
-  body {
+ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffebd2;
-  }
+}
   
-  nav {
+nav {
     background-color: #102e48;
-  }
+}
   
 
   /* height og  width i nav container */
@@ -45,22 +47,22 @@ nav {
     width: 100%;
     z-index: 10;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-between;
 }
   
-.nav-iconer {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 30px;
+.nav-iconer img {
+    width: 4%;
+    margin-left: 10px;
 }
 
 .nav-iconer {
-    display:inline-block;
-    color: #f28a33;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: -6%;
 }
 
 
@@ -91,16 +93,6 @@ img#brand-logo {
     height: 150px;
     z-index: 1;
 }
-
-/* Style nav */
-  /* nav ul {
-    display: flex;
-    justify-content: center;
-    margin-right: 20px;
-    margin-left: -106px ;
-    margin-top: 23px;
-  }
-   */
 
 /* Style nav */
    nav ul {
@@ -150,7 +142,7 @@ img#brand-logo {
   
   /* style label checkbtn class */
 
-.checkbtn {
+div.burger-container {
     font-size: 30px;
     color: white;
     float: right;
@@ -160,13 +152,13 @@ img#brand-logo {
 }
   
 
-  /* styling the input tag  */
+  /* style input tag  */
 #check {
     display: none;
 }
   
   
-  /* styling the label checkbtn class - display none*/
+  /* stylinng aflabel checkbtn class - display none*/
 .checkbtn {
     font-size: 50px;
     color: #f28a33;
@@ -178,7 +170,7 @@ img#brand-logo {
 }
 
 
-/* forside to styles */
+/* main første sektion styles */
 .forside-top {
     position: relative;
     text-align: center;
@@ -202,6 +194,10 @@ img#brand-logo {
     object-fit:cover;
     margin-top: -34px;
     
+}
+
+.mobil-forside{
+    display: none;
 }
 
 .knap{
@@ -230,6 +226,13 @@ button {
 
 /* anden section i main styles */
 
+.baggrund-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
 img.baggrund-image {
     position: absolute;
     margin-top: auto;
@@ -246,6 +249,7 @@ h2 {
     font-size: 65px;
     z-index: inherit;
     text-shadow: 2px 2px 5px black;
+    margin-left: 3%;
 }
 
 .kampagne-container{
@@ -267,7 +271,7 @@ h2 {
 }
 
 /* styling af tekst på midt sektion */
-.tekstbox{
+.tekstbox {
     flex-basis: 50%;
     padding-left: 4%;
     color: #f28a33;
@@ -279,11 +283,17 @@ h2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width:fit-content ;
     margin:auto;
+    margin-left: 5%;
 }
 
 .pil-container {
     display: flex; 
     align-items: center; 
+    text-decoration: none;
+}
+
+.pil-container :hover{
+    color: #102e48;
 }
 
 #hashtag{
@@ -303,63 +313,126 @@ h2 {
 .mystery-daase img{
     width: 100%;
     height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
    
 }
 
-@media(max-width: 600px) {
- 
-.logo{
-  font-size: 30px;
-  padding-left: 50px;
+/* tredje section */
+#sidste-titel{
+    font-size: 36px;
+    margin-left: -63px;
+    color: #102e48;
+    padding: 149px;
+    z-index: 1;
+    margin-top: -2%;
 }
 
-img#brand-logo {
-    height: auto;
-    width: 147%;
-}
-
-.logo-container {
-    width: 20%;
-    height: 5px;
-}
-
- nav {
+/* billeder og tekst placeres ved siden af hinanden + bulletpoints fjernes */
+.nyheder-images {
+    margin-top: 30px;
     display: flex;
-    flex-direction: row;
-    background-color: #102e48;
-    width: 100%;
-    z-index: 10;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    height: 65px;
+    padding-bottom: 60px;
 }
 
-
- nav ul li a{
-  font-size: 16px;
- }
-
- h1{
-  padding-top: 20px;
- }
-
-.forside-top h1 {
-    font-size: 2.5em; 
+.nyheder-images ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    padding: 30px;
 }
 
-.kampagne-container {
-    flex-direction: column; /* Stacks flex items vertically */
-  }
-
-  .tekstbox,
-  .mystery-daase {
-    flex-basis: auto; /* Resets the width for mobile */
-  }
+/* Styling af elementerne indeni .social */
+.social {
+    font-size: 24px;
+    color: inherit;
+    border: solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 15px;
 }
 
+/* hovereffekt på  */
+.social :hover {
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+/*styling af footer*/
+.footer {
+    display: grid;
+    position: relative; /* Ensures that absolutely positioned children are relative to this container */
+    width: inherit;
+    height: auto;
+    background-image: url('media/footer.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f28a33;
+    text-align: center;
+    padding: 40px 20px; 
+}
+
+.footer img{
+    width: 104%;
+    height: auto;
+    margin-left: -19px;
+    margin-bottom: -45px;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+    position: absolute; /* Position the list over the background */
+    top: 50%; /* Adjust as necessary */
+    left: 50%; /* Adjust as necessary */
+    transform: translate(-50%, -50%); /* Centers the content */
+    width: 100%; /* Ensures the list spans the width of the footer */
+}
+
+.copyright{
+    margin-top: -2%;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.footer ul li a, p{
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.footer ul li a:hover {
+    opacity: 0.9;
+}
+
+/* styling footer SLUT */
 
 
-@media(max-width: 925px){
+@media screen and (min-width: 925px) and (max-width: 1440px) {
+
+    img#brand-logo {
+        height: auto;
+        width: 134%;
+    }
+}
+
+@media (max-width:925px ){
+
 img#brand-logo {
     height: auto;
     width: 110%;
@@ -388,7 +461,7 @@ nav {
     z-index: 10;
     align-items: center;
     justify-content: space-around;
-    height: 86px;
+    height: 60px;
 }
 
 nav ul li{
@@ -419,32 +492,141 @@ ul{
  transition: all 3.5s;
 }
 
- 
- 
-
-
-
-
 nav ul li {
     margin: 50px 0;
     line-height: 30px;
 }
 
-
-.forside-billede img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-top: -12px;
+.nav-iconer{
+    justify-content: flex-end;
+    padding-right: 5%;
 }
 
+.nav-iconer img {
+    width: 5%;
 }
 
 
-@media screen and (min-width: 925px) and (max-width: 1440px) {
 
+h1{
+    display: none;
+}
+  
+.forside-billede{
+      display: none;
+}
+  
+.mobil-forside{
+      display: block;
+      width: 100%;
+      height: auto;
+}
+
+button {
+    margin-bottom: 400px;
+    font-size: large;
+}
+}
+
+@media(max-width: 600px) {
+  
 img#brand-logo {
-    height: auto;
-    width: 134%;
+        height: auto;
+        width: 229%;
+    }
+    
+.logo-container {
+        width: 47%;
+        height: 25px;
+        padding-left: 50px;
 }
+      
+nav {
+     display: flex;
+        flex-direction: row;
+        background-color: #102e48;
+        width: 100%;
+        z-index: 10;
+        align-items: center;
+        justify-content: space-around;
+        height: 65px;
+    }
+    
+    
+nav ul li a{
+      font-size: 16px;
+    }
+    
+nav ul li{
+        display: block;
+    }
+    
+.nav-iconer{
+        justify-content: flex-end;
+        padding-right: 5%;
+    }
+    
+.nav-iconer img {
+        width: 15%;
+    }
+    
+.burger-container{
+    
+        display: block;
+    }
+h1{
+      display: none;
+     }
+    
+.forside-billede{
+        display: none;
+    }
+    
+.mobil-forside{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+/* style af knap på forside */
+button {
+        margin-bottom: 74%;
+        font-size: medium;
+    }
+    
+.forside-top h1 {
+        font-size: 2.5em; 
+    }
+    
+.kampagne-container {
+        flex-direction: column;
+        width: 75%;
+        padding-left: 70px; /* centrer content */
+    }
+    
+h2{
+        font-size: 32px;
+    }
+    
+.tekstbox{
+        margin-right: 5%;
+    }
+    
+    
+.mystery-daase{
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+
+img .mystery-daase{
+     width: 78%;
 }
+    
+.tekstbox,
+.mystery-daase {
+     flex-basis: auto; 
+}
+    
+}
+

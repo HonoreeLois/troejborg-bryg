@@ -33,19 +33,17 @@
           </div>
           <div class="navbar-container"> 
             <ul>
-              <li><a class="active" href="index.html">FORSIDE</a></li>
+              <li><a class="active" href="/index.html">FORSIDE</a></li>
               <li><a href="pages/produkter.html">PRODUKTER</a></li>
               <li><a href="pages/troejborg.html">TRØJBORG ZERO</a></li>
               <li><a href="pages/omos.html">OM OS</a></li>
             </ul>
+
             <div class="nav-iconer">
-            <img src="media/search.png" alt="serach loop">
-            <img src="media/shopping-bag.png" alt="kurv">
+                <img src="media/search.png" alt="serach loop" class="navbar-icon">
+                <img src="media/shopping-bag.png" alt="kurv"  class="navbar-icon">
             </div>
           </div>
-
-            
-
 
           <div class="burger-container">
             <input type="checkbox" id="check">
@@ -60,8 +58,10 @@
  <article>
     <!-- forside  billede til mobil -->
     <img src="media/img/mobilforside.png" alt="mobil forside billede" class="mobil-forside">
+    <!-- forside knap -->
  <section class="forside-top">
     <h1>UDFORSK</h1>
+    <!-- forside desktop billede -->
  <div class="forside-billede">
     <img src="media/img/forsidebillede.webp" alt="øl udvalg">
 
@@ -73,7 +73,6 @@
  </div>
 
  </section>
-
  <!-- midter sektion -->
  <section class="kampagne">
      <div>
@@ -82,7 +81,7 @@
      <h2>Stem på en ny smag!</h2>
     <div class="kampagne-container">
           <div class="tekstbox">
-              <p>Klar til at smage noget nyt? ✨
+              <p id="k-tekst">Klar til at smage noget nyt? ✨
                 Vi er på jagt efter den næste 
                 vilde smagsvariant af vores øl, 
                 og vi vil have DIN mening!
@@ -104,18 +103,52 @@
     </div>
     
  </section>
-
-
-
-
  </article>
 
- </main>
+ <article>
+    <section>
+    <div class="background-color">
+      <h3 id="sidste-titel">Se hvordan andre nyder deres øl!</h3>
+   <!-- linker til billder + tekst -->
+       <div class="nyheder-images">
+       <div class="background-color-images">
+       <ul>
+       
+        
+            <li>
+               <figure class="boxes">
+               <img src="" alt="">
+               
+             </figure>
 
+             <figure class="boxes">
+               <img src="" alt="">
+             </figure> 
+            </li>
+           
+           <li>
+               <figure class="boxes">
+                <img src="" alt="">
+           </li>
+       </ul>
+       </div>
+     </div>
+    </div> 
+    </section> 
+   </article>
+ </main> 
 
-
-
-
+ <footer class="footer">
+    <img src="media/footer.webp" alt="footer-bar">
+    <ul class="footermenu">
+        <li><a href="/index.html">Hjem</a></li>
+        <li><a href="/html/info.html">Info</a></li>
+        <li><a href="#">Betingelser</a></li>
+        <li><a href="#">Privat politik</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+        <p class="copyright">Trøjborg Bryg @ 2023</p>
+  </footer>
     </body>
 
 </html>

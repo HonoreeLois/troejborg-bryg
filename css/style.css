@@ -18,28 +18,11 @@ a {
   
   /* setting font */
   
- body {
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffebd2;
 }
-  
-nav {
-    background-color: #102e48;
-}
-  
-
-  /* height og  width i nav container */
-  
-  /* nav {
-    display: flex;
-    flex-direction: row;
-
-    background-color:#102e48;
-    height: 118px;
-    width: 100%;
-    z-index: 10;
-
-} */
+   
 nav {
     display: flex;
     flex-direction: row;
@@ -47,13 +30,15 @@ nav {
     width: 100%;
     z-index: 10;
     align-items: center;
-    /* justify-content: space-around; */
     justify-content: space-between;
+    position: fixed;
+    height: 18%;
+    
 }
   
 .nav-iconer img {
-    width: 4%;
-    margin-left: 10px;
+    width: 3%;
+    margin-left: 5px;
 }
 
 .nav-iconer {
@@ -63,6 +48,7 @@ nav {
     gap: 10px;
     justify-content: flex-end;
     margin-top: -6%;
+    padding-right: 4%;
 }
 
 
@@ -74,18 +60,11 @@ nav {
     z-index: 10;
 }
 
-.logo img {
-    /* display: block;
-    width: 14%; 
-    height: auto;
-    margin: 0; 
-    margin-top: 4.5%;
-    margin-left: 3%; */
-}
 
-img#brand-logo {
+#brand-logo {
     height: auto;
-    width: 97%;
+    width: 87%;
+    margin-top: -2%;
 }
 
 .logo-container {
@@ -97,9 +76,9 @@ img#brand-logo {
 }
 
 /* Style nav */
-   nav ul {
+nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 1.5%;
 }
 
@@ -107,53 +86,50 @@ img#brand-logo {
   
   /* Style  nav */
   
-  nav ul li {
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-  }
+}
   
   
-  /* Style link insde i nav */
+/* Style link insde i nav */
   
-  nav ul li a {
+nav ul li a {
     color: #f28a33;
     font-size: 25px;
     font-weight: 600;
-  }
+}
   
   
  
-  /* Style the active link */
+/* Style the active link */
   
-  a:active,
-  a:hover {
+a:active, a:hover {
     background-color: white;
     transition: .5s;
-  }
+}
   
 
-  
-  nav ul li a {
+nav ul li a {
     color: #f28a33;
     font-size: 25px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-  }
+}
   
-  /* style label checkbtn class */
+/* style label checkbtn class */
 
-div.burger-container {
+/* .checkbtn {
     font-size: 30px;
     color: white;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    line-height: 20px;
+    margin-right: 10px;
     cursor: pointer;
-}
+} */
   
-
   /* style input tag  */
 #check {
     display: none;
@@ -165,8 +141,8 @@ div.burger-container {
     font-size: 50px;
     color: #f28a33;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    line-height: 20px;
+    margin-right: 10px;
     cursor: pointer;
     display: none;
 }
@@ -187,14 +163,13 @@ div.burger-container {
 
 .forside-billede {
     position: relative;
-    margin-top: 0%;
 }
 
 .forside-billede img {
     width: 100%;
     height: auto;
     object-fit:cover;
-    margin-top: -34px;
+    margin-top: 8%;
     
 }
 
@@ -209,7 +184,7 @@ div.burger-container {
     transform: translate(-50%, -50%); 
 }
 
-button {
+.knap {
     background-color: #f28a33; 
     border: none;
     padding: 10px 20px;
@@ -221,7 +196,7 @@ button {
 }
 
 
-.forsideknap button:hover {
+.forsideknap :hover {
     background-color:#102e48; 
 }
 
@@ -232,7 +207,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 img.baggrund-image {
@@ -245,7 +219,7 @@ img.baggrund-image {
 h2 {
     color: #f28a33;
     display: grid;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 40px;
     margin-bottom: 20px;
     font-size: 65px;
@@ -296,6 +270,8 @@ h2 {
 
 .pil-container :hover{
     color: #102e48;
+    cursor: pointer;
+    
 }
 
 #hashtag{
@@ -320,58 +296,78 @@ h2 {
 }
 
 /* tredje section */
-h3{
-    font-size: 36px;
+h3 {
+    font-size: 65px;
     margin-left: -63px;
     color: #2b719c;
     padding: 149px;
     z-index: 1;
     margin-top: -2%;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgb(88, 84, 84);
 }
 
-/* billeder og tekst placeres ved siden af hinanden + bulletpoints fjernes */
-.nyheder-images {
-    margin-top: 30px;
+/* billeder  på forsiden */
+.bottom-images {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-bottom: 60px;
 }
 
-.nyheder-images ul {
+.bottom-images ul {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: row-reverse;
     list-style-type: none;
     padding: 30px;
 }
-
-/* Styling af elementerne indeni .social
-.social {
-    font-size: 24px;
-    color: inherit;
-    border: solid white;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50px;
-    margin: 0 15px;
+.bottom-images img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+}
+.boxes {
+    display: flex;
+    padding-inline: 20px;
 }
 
+
 /* hovereffekt på  */
-/* .social :hover {
+.nav-iconer :hover {
    transform: scale(1.2);
    transition: 1s;
-}  */
+   cursor: pointer;
+
+} 
+
+/* styling a scroll knap */
+#scrolltotopbutton {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    background-color: #f28a33; 
+    color:#102e48; 
+    cursor: pointer; 
+    padding: 1.5%; 
+    border-radius: 40px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: 800;
+    height: 3%;
+    width: 2%;
+
+}
+  
+#scrollToTopButton:hover {
+    background-color: white; 
+}
+
 
 /*styling af footer*/
 .footer {
     display: grid;
-    position: relative; /* Ensures that absolutely positioned children are relative to this container */
+    position: relative; 
     width: inherit;
     height: auto;
     background-image: url('media/footer.webp');
@@ -391,19 +387,26 @@ h3{
 }
 
 .footer ul {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 1.5;
-    position: absolute; 
-    top: 86%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 100%; 
+    margin-top: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%
+}
+
+.footermenu ul {
+    display: flex;
+    width:15px;
+    justify-content: center;
+    margin-top: -103px;
+    margin-left: -61%;
+
 }
 
 .copyright{
     margin-top: -2%;
+    margin-bottom: 2px;
 }
 
 .footer ul li {
@@ -424,23 +427,30 @@ h3{
 }
 
 /* styling footer SLUT */
+
 /* index.html slut */
 
 /* produkter.html start */
 
 .shop-side {
     padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.shop-side > :last-child {
+    margin-bottom: 5%; /* Decrease this value if it's too large */
 }
 
 .shop-side h4{
     text-align: center; 
     margin-top: 0; 
-    padding-top: 20px;
+    padding-top: 10%;
 }
 
 h4{
     color: #f28a33;
-    font-size: larger;
+    font-size: 50px;
 
 }
   
@@ -451,31 +461,40 @@ h4{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
+
+
   
 .produkt-dåse {
     padding: 20px;
     text-align: left;
+    padding-inline: 30px;
+    padding-block: 90px;
 }
   
 .produkt-dåse img {
     width: 100%;
-    max-width: 350px; /* Adjust based on actual image sizes */
+    max-width: 400px; 
     margin-bottom: 10px;
 }
   
-.produkt-dåse h4 {
-    margin-bottom: 5px;
-    color: #003366; /* Dark text color for product title */
-}
   
 .produkt-dåse p {
     margin-bottom: 10px;
-    color: #003366; /* Lighter text color for product description and price */
+    color: #006; 
+}
+
+#lager{
+    color: green;
+}
+
+#lav-status{
+    color: #f28a33;
 }
   
 .kurv-knap {
-    background-color: #2b719c; /* Adjust button color as needed */
+    background-color: #2b719c; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -484,236 +503,585 @@ h4{
 }
   
 .kurv-knap button:hover {
-    background-color: #f28a33; /* Darker shade for hover effect */
+    background-color: #f28a33;
+}
+
+.kurv-kontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* produkter css SLUT */
+
+/* troejborg produkter start */
+.tekst-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+  
+   
+.infographic-1, .infographic-2 {
+    display: flex; 
+  
+}
+  
+input[type=checkbox] {
+    display: none;
+}
+  
+input[id="graphic-1"]:checked ~ label > img {
+    transform: scale(1.2);
+    cursor: zoom-out;
+    transition: transform 1s ease;
+}
+
+input[id="graphic-2"]:checked ~ label > img {
+    transform: scale(1.2);
+    cursor: zoom-out;
+    transition: transform 1s ease;
+}
+
+.igtekst h5 {
+    font-size: 3rem;
+    color: #f28a33;
+    text-align: center;
+    margin-top: 17%;
 }
 
 
+.igtekst p {
+    margin: 0 10%;
+    font-size: 20px;
+    text-align: left;
+    padding: 40px;
+    font-weight: 300;
+    max-width: 47%;
+    margin-left: 23%;
+}
+
+#slogan{
+    font-size: 3rem;
+    color: #f28a33;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10%;
+} 
 
 
-@media screen and (min-width: 925px) and (max-width: 1440px) {
-    .nav-iconer img {
-        width: 5%; 
-    }
-
-    /* Reducer størrelsen på logoet */
-    .logo-container {
-        width: 16%;
-        height: 47px;
-    }
-
-    img#brand-logo {
-        width: auto; /* Juster bredden automatisk */
-    }
-
-    /* Tilpas navigationens layout */
-    nav {
-    position: fixed;
+.infographic-1 img {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+    max-width: 50%;
+    cursor: zoom-in;
+    transition: transform 1s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+  
+  
+.infographic-2 img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+    max-width: 50%;
+    cursor: zoom-in;
+    transition: transform 1s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* omos html START */
+
+h6{
+    font-weight: 600;
+    margin-top: 10%;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+#historie{
+    color: #f28a33;
+    padding-top: 50px;
+    margin-left: 2%;
+}
+
+#faq{
+   color: #2b719c;
+   padding-right: 36%;
+}
+
+#kontakt{
+    color: #f28a33;
+}
+
+
+.vores-historie {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
     flex-direction: row;
-    width: 100%;
-    z-index: 10;
-    align-items: center;
-    justify-content: space-around;
-    height: 60px;
-        
-    }
+    flex-wrap: wrap;
+}
 
-    nav ul {
-        margin-top: 0; /* Fjern topmargin */
-    }
+#historie-tekst{
+    max-width: 63%;
+    margin-left: 1%;
+}
 
-    nav ul li {
-        margin: 10px 0; 
-        display: block;
-    }
+#slogan2{
+font-weight: 600;
+color: #f28a33;
+}
 
-
-.nav-menu {
-        height: 90px;
-    }
-.checkbtn{
-        display: block;
-       }
- #check:checked ~ ul { 
-           left: 0;
-    }
-
-.forside-billede{
-        display: none;
-  }
+.faq-section{
+   
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
     
-.mobil-forside{
-        display: block;
-        width: 100%;
-        height: auto;
-  }
-button {
-      margin-bottom: 400px;
-      font-size: large;
-  }
+}
 
-    ul{
-           position: fixed;
-           width: 100%;
-           height: 1000vh;
-           background: #102e48;
-           top: 80px;
-           left: 0;
-           text-align: center;
-    }
 
-    ul{
-        left: 100%;
-        transition: all 3.5s;
-    }
+#faq-tekst{
+    margin-top: 19%;
+    
+    
+}
 
-    /* Tilpas teksten i .kampagne-container */
-    .tekstbox {
-        width: 90%; /* Gør tekstboksen smallere */
-        margin-left: 5%; /* Centrer tekstboksen */
-        font-size: medium; /* Mindre skriftstørrelse */
-    }
+#kontakt-tekst{
+    margin-left: 1%;
+}
 
-    .kampagne-container {
-        flex-direction: column; /* Stak elementerne vertikalt */
-    }
+.vores-historie, .faq-section, .kontakt-section {
+    padding: 10px;
+}
+  
+.om-os p{
+    margin: 0 10%;
+    font-size: 20px;
+    padding: 27px;
+    font-weight: 300;
+    max-width: 47%;
+    margin-left: 1%;
+}
 
-    .mystery-daase img {
-        width: 90%; /* Juster bredden af billedet */
-        margin: 10px auto; /* Centrer billedet */
-    }
+/* støøre skærme breakpoint */
+@media screen and (min-width: 925px) and (max-width: 1025px) {
 
-    /* Tilpas størrelsen og positionen af overskrifter og tekst */
-    h2, h3 {
-        font-size: 30px; /* Mindre skriftstørrelse for overskrifter */
-        margin-left: 5%; /* Centrer overskrifter */
-    }
+/* forside START */
+.nav ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -2.5%;
+}
 
-    /* Tilpasning af footer layout */
-    .footer ul {
-        top: auto; 
-        bottom: 10px;
-        transform: translateX(-50%); 
-    }
+.nav-iconer{
+    margin-top: -7%;
+}
+
+.navbar-iconer img{
+    width: 3%;
+    margin-left: 3px;
+}
+
+.logo-container{
+    margin-top: 0;
+}
+#brand-logo  {
+   width: 90%;
+   margin-top: 26%;
+}
+
+.bottom-images ul{
+    padding-left: 1px;
+    
+}
+
 
 .footer img {
-    width: 100%; 
-    margin-left: 0; 
+    width: 106%;
 
 }
 
+/* produkter START */
+
+.igtekst p {
+    text-align: left;
+    max-width: 64%;
+    margin-left: 18%;
 }
 
+/* om os */
+
+#historie-tekst {
+    max-width: 87%;
+}
+
+.om-os p{
+    max-width: 49%;
+}
+
+
+}
+
+
+/* ipad breakpoint START */
 @media (max-width:925px ){
-    
-    
+
+/* forside START  */
+.navbar-container {
+    height: 90px;
 }
 
 
+.checkbtn{
+    display: block;
+}
 
 
+.navbar-container ul{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+
+#check:checked ~ ul { 
+    left: 0;
+}
+
+.navbar-container ul li{
+    display: block;
+}
+
+.navbar-container ul li {
+    margin: 50px 0;
+    line-height: 30px;
+}
 
 
+.nav-iconer img {
+    width: 5%;
+}
 
-@media(max-width: 600px) {
-  
-img#brand-logo {
-        height: auto;
-        width: 229%;
-    }
-    
+.nav-iconer{
+    margin-top: 5%;
+    margin-right: 3%;
+}
+
+.navbar-container ul{
+    left: 100%;
+    transition: all 3.5s;
+}
+
+.navbar-container ul li {
+    margin: 50px 0;
+    line-height: 30px;
+}
+
 .logo-container {
-        width: 47%;
-        height: 25px;
-        padding-left: 50px;
+    width: 41%;
+    height: 91px;
+    z-index: 1;
+    margin-left: 4%;
+    margin-top: 5%;
 }
-      
-nav {
-     display: flex;
-        flex-direction: row;
-        background-color: #102e48;
-        width: 100%;
-        z-index: 10;
-        align-items: center;
-        justify-content: space-around;
-        height: 65px;
-    }
+
+.knap {
+    font-size: large;
+    margin-top: -19%;
+}
+
+.forside-billede{
+    display: none;
+}
     
-    
+.mobil-forside{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: -6%;
+}
+
+h3 {
+    font-size: 50px;
+    margin-left: -63px;
+    margin-top: -7%;
+    margin-bottom: -16%;
+}
+
+.bottom-images ul{
+    position: relative;
+    margin-left: -51px;
+
+}
+
+.footer img {
+    width: 108%;
+}
+
+.footer ul{
+    margin-top: -12px;
+}
+
+/* produkter START */
+.shop-side {
+    font-size: 15px;
+}
+
+.shop-side h4 {
+    margin-top: 10%;
+    padding-top: 13%;
+    margin-bottom: -18%;
+}
+
+.produkt-dåse img {
+    margin-bottom: 2px;
+}
+
+/* trøjborg zero START */
+
+.igtekst h5 {
+    margin-top: 23%;
+}
+
+.igtekst p {
+    font-size: 18px;
+    text-align: left;
+    padding: 40px;
+    max-width: 70%;
+    margin-left: 12%;
+}
+
+.infographic-1 img {
+    width: 50%;
+}
+
+.infographic-2 img {
+    width: 46%;
+}
+
+/* om os START*/
+#historie {
+    padding-top: 97px;
+}
+
+}
+
+
+
+/* telefon breakpoint START */
+@media(max-width: 600px) {
+     
+#brand-logo {
+    width: 236%;
+    margin-top: -26%;
+    margin-left: -70%;
+}
+
+.logo-container {
+    height: 25px;
+    padding-left: 50px;
+}
+
+.navbar-container{
+    height: 60px;
+}
+
 nav ul li a{
       font-size: 16px;
-    }
+}
     
 nav ul li{
         display: block;
-    }
+}
     
 .nav-iconer{
         justify-content: flex-end;
         padding-right: 5%;
-    }
+}
     
 .nav-iconer img {
         width: 15%;
-    }
-    
-.burger-container{
-    
-        display: block;
-    }
+}
+
 h1{
       display: none;
-     }
-    
+}
+
 .forside-billede{
-        display: none;
-    }
-    
+    display: none;
+}
+
 .mobil-forside{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    
-/* style af knap på forside */
-button {
-        margin-bottom: 74%;
-        font-size: medium;
-    }
-    
-.forside-top h1 {
-        font-size: 2.5em; 
-    }
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -6%;
+    padding-top: 6%;
+}
+
+.knap {
+    font-size: small;
+}
+
     
 .kampagne-container {
-        flex-direction: column;
-        width: 75%;
-        padding-left: 70px; /* centrer content */
-    }
+    display: flex;
+    flex-direction: column-reverse;
+    width: 69%;
+    padding-left: 70px; /* centrer content */
+}
     
-h2{
-        font-size: 32px;
-    }
+h2 {
+    font-size: 30px;
+}
     
 .tekstbox{
-        margin-right: 5%;
-    }
-    
-    
-.mystery-daase{
-        display: flex;
-        justify-content: center;
-        order: -1;
-    }
+    margin-right: 5%;
+}
 
-img .mystery-daase{
-     width: 78%;
+h3 {
+    font-size: 29px;
+    max-width: 45%;
+    margin-top: -13%;
+    margin-bottom: -28%;
 }
-    
-.tekstbox,
-.mystery-daase {
-     flex-basis: auto; 
+
+.bottom-images ul {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-left: -6px;
+    gap: 86px;
 }
-    
+
+#scrolltotopbutton{
+    padding: 3.5%;
+    border-radius: 131px;
+    height: 6%;
 }
+
+.footer img{
+    width: 115%;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0px 23px;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 6%;
+    margin-bottom: -21px;
+    font-size: 11px;
+}
+
+/* produkter START */
+
+.shop-side h4{
+    margin-top: 28%;
+}
+
+/* trøjborg zero START */
+
+.igtekst h5 {
+    margin-top: 49%;
+    font-size: 31.5px;
+}
+
+.igtekst p {
+    font-size: 16px;
+}
+
+#slogan {
+    font-size: 2rem;
+}
+
+.infographic-1 img {
+    margin-bottom: -22%;
+    margin-top: 9%;
+}
+
+.infographic-2 img {
+    width: 50%;
+}
+
+/* Om os START */
+.om-os p {
+    font-size: 16px;
+}
+
+
+.vores-historie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin-left: 8%;
+}
+
+#historie {
+    padding-top: 118px;
+    margin-left: -17%;
+}
+
+#historie-tekst {
+    max-width: 79%;
+    margin-left: 1%;
+    text-align: left;
+}
+
+#slogan2 {
+    font-weight: 800;
+    max-width: 75%;
+    text-align: center;
+    margin-left: -4%;
+}
+
+.faq-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#faq{
+    margin-left: -20%;
+}
+
+#faq-tekst{
+    margin-top: -2%;
+    max-width: 62%;
+}
+
+.kontakt-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -11%;
+}
+
+
+
+
+
+}
+
+
+
 

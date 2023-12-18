@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,112 +14,105 @@
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<body>
+  <header>
+  <nav>
+      <!-- <div class="logo-container"> -->
+       <img src="../media/logo.png" alt="Trøjborg Bryg logo" class="logo">
+      <!-- </div> -->
 
+    <input type="checkbox" id="check" />
 
-    <body>
-        <header>
-        <nav>
-            <!---  SoMe iconer virker ej-->
-            <!-- <div class="nav-iconer">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-bag-shopping"></i>
-            </div> -->
+    <label for="check" class="checkbtn">
+     <i class="fa fa-bars"></i>
+    </label>
 
-          <!-- input tag, label tag og i tag til fontawesome icon -->
-          
+    <ul>
+      <li><a class="active" href="/index.html">FORSIDE</a></li>
+      <li><a href="produkter.html">PRODUKTER</a></li>
+      <li><a href="troejborg.html">TRØJBORG ZERO</a></li>
+      <li><a href="omos.html">OM OS</a></li>
+    </ul>
 
-          <div class="logo-container">
-            <img src="../media/logo.png" id="brand-logo" alt="Trøjborg Bryg logo">
-          </div>
-          <div class="navbar-container"> 
-            <ul>
-              <li><a class="active" href="/index.html">FORSIDE</a></li>
-              <li><a href="produkter.html">PRODUKTER</a></li>
-              <li><a href="troejborg.html">TRØJBORG ZERO</a></li>
-              <li><a href="omos.html">OM OS</a></li>
-            </ul>
+    <!-- <div class="nav-iconer"> -->
+      <img src="../media/search.png" alt="serach loop" class="navbar-icon">
+      <img src="../media/shopping-bag.png" alt="kurv"  class="navbar-icon">
+    <!-- </div> -->
+  </nav>
+  </header>
+   
+  <!-- main-contet START -->
+  <main class="troejborg-page">
+    <a id="top"></a>
+    <section id="main-sektion">
+        <article>
+          <div class="tekst-container">
+            <div class="igtekst">
+                <h5>Vores Alkoholfri Øl</h5>
+                <p>Hos TrøjborgBryg er vi dedikerede til at fremme bæredygtighed og understøtte den grønne omstilling. 
+                    Vi er stolte af at anvende traditionelle brygmetoder, som er i harmoni med vores engagement i miljøet og som sikrer,
+                    at vores håndværk resulterer i et reduceret CO2-aftryk.<br>
+                    
+                    <br>Vores alkoholdfri øl er en hyldest til naturen, brygget med kun naturlige ingredienser:
+                    vand, bygmalt, gær, humle og et strejf af honning for en subtil sødme. Særligt til jer, der normalt ikke vælger øl.<br>
+                  </p><br>
+                  <h5 id="slogan">Sund For Dig, Sund For Naturen </h5>
 
-            <div class="nav-iconer">
-                <img src="../media/search.png" alt="serach loop" class="navbar-icon">
-                <img src="../media/shopping-bag.png" alt="kurv"  class="navbar-icon">
             </div>
-          </div>
-
-          <div class="burger-container">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars" ></i>
-            </label>
-          </div>
-        </nav>
-       </header> 
-
-         <!-- main-contet START -->
-        <main class="troejborg-page">
-            <a id="top"></a>
-            <section id="main-sektion">
-                <article>
-                  <div class="tekst-container">
-                    <div class="igtekst">
-                        <h5>Vores Alkoholfri Øl</h5>
-                        <p>Hos Trøjborg Bryg er vi dedikerede til at fremme bæredygtighed og understøtte den grønne omstilling. 
-                            Vi er stolte af at anvende traditionelle brygmetoder, som er i harmoni med vores engagement i miljøet og som sikrer,
-                             at vores håndværk resulterer i et reduceret CO2-aftryk. Vores alkoholdfri øl er en hyldest til naturen, brygget med kun de fineste naturlige ingredienser:
-                            vand, bygmalt, gær, humle og et strejf af honning for en subtil sødme. Særligt til jer, der normalt ikke vælger øl.<br>
-                          </p><br>
-
-                          <h5 id="slogan">Trøjborg Bryg - Sund For Dig, Sund For Narturen </h5>
-
-
-                    </div>
-                    <div class="infographic-1">
-                        <input type="checkbox" id="graphic-1">
-                        <label for="graphic-1">
-                        <img src="../media/oel-indhold.png" alt="infographic-indhold">  
-                        </label>
-                    </div>
-
-                    <div class="igtekst">
-                        <h5>En Smag For Opleveren</h5>
-                        <p>Vores signatur alkoholfri øl, Trøjborg Zero er gylden i farven. Øllens smagsprofil
-                            balancerer fint mellem rundhed og en subtil bitterhed, som sikrer en kompleksitet, der sjældent opleves i alkoholfrie bryg.
-                            Den moderate karbonering giver en blød mundfølelse, mens efterklangen er behageligt kort, hvilket inviterer til endnu en tår.
-                            Uanset om du nyder den til et måltid eller som en forfriskning, leverer Trøjborg Zero en smagsoplevelse, der kan nydes når som helst, uden at gå på kompromis med velvære.
-                          </p>
-                    </div>
-
-                    <div class="infographic-2">
-                        <input type="checkbox" id="graphic-2">
-                        <label for="graphic-2">
-                        <img src="../media/graphic.png" alt="infographic-smag">  
-                        </label>
-                    </div>
+            <div class="infographic-1">
+                <input type="checkbox" id="graphic-1">
+                <label for="graphic-1">
+                <img src="../media/oel-indhold.png" alt="infographic-indhold">  
+                </label>
+            </div>
+            <div class="igtekst">
+                <h5 id="smag">En Smag For Opleveren</h5>
+                <p>Vores signatur alkoholfri øl, Trøjborg Zero er gylden i farven og øllens smagsprofil
+                    balancerer fint mellem rundhed og en subtil bitterhed, som sikrer en kompleksitet, der sjældent opleves i alkoholfrie bryg.<br>
+                    <br> Den moderate karbonering giver en blød mundfølelse, mens efterklangen er behageligt kort, hvilket inviterer til endnu en tår.<br>
                     
-                </div>
-                <a href="#top" id="scrollToTopButton" title="Go to top">Top</a>
-                    
-                </article>
-                
-              </section>
-
-
+                    <br> Uanset om du nyder den til et måltid eller som en forfriskning, leverer Trøjborg Zero en smagsoplevelse, der kan nydes når som helst, uden at gå på kompromis med velvære.
+                  </p>
+            </div>
+            <div class="infographic-2">
+                <input type="checkbox" id="graphic-2">
+                <label for="graphic-2">
+                <img src="../media/graphic.png" alt="infographic-smag">  
+                </label>
+            </div>
+           </div>
+        <a href="#top" id="scrolltotopbutton" title="Go to top">Top</a>
             
-        </main>
+        </article>
+        
+      </section> 
+</main>
 
-    
-    </body>
 
 
-<footer class="footer">
+
+
+
+
+
+
+</body>
+
+
+
+
+
+    <footer class="footer">
         <img src="../media/bølger-footer.svg" alt="footer-bar">
         <ul class="footermenu">
             <li><a href="/index.html">Hjem</a></li>
             <li><a href="/html/info.html">Info</a></li>
             <li><a href="#">Betingelser</a></li>
             <li><a href="#">Privat politik</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="omos.html">FAQ</a></li>
         </ul>
-        <p class="copyright">Trøjborg Bryg @ 2023</p>
+        <p class="copyright">TrøjborgBryg @ 2023</p>
+        
     </footer>
     
 </html>

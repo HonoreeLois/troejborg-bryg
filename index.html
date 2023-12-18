@@ -1,85 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <meta name="description" content="Alkohol fri øl">
-    <meta property="og:title" content="Trøjborg Bryg - Alkoholfri Øl">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="TrøjborgBryg - Alkoholfri Øl">
+    <meta name="keywords" content="alkogolfri øl, sund alkoholfri øl, øl uden alkohol">
     <title>Trøjborg Bryg</title>
     <!-- linke til font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-
-    <body>
+ </head>
+ <body>
         <header>
         <nav>
-            <!---  SoMe iconer virker ej-->
-            <!-- <div class="nav-iconer">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-bag-shopping"></i>
-            </div> -->
+            <!-- <div class="logo-container"> -->
+             <img src="media/logo.png" alt="TrøjborgBryg logo" class="logo">
+            <!-- </div> -->
 
-          <!-- input tag, label tag og i tag til fontawesome icon -->
-          
 
-          <div class="logo-container">
-            <img src="media/logo.png" id="brand-logo" alt="Trøjborg Bryg logo">
-          </div>
-          <div class="navbar-container"> 
-            <ul>
-              <li><a class="active" href="/index.html">FORSIDE</a></li>
-              <li><a href="pages/produkter.html">PRODUKTER</a></li>
-              <li><a href="pages/troejborg.html">TRØJBORG ZERO</a></li>
-              <li><a href="pages/omos.html">OM OS</a></li>
-            </ul>
+      
+          <input type="checkbox" id="check" />
 
-            <div class="nav-iconer">
-                <img src="media/search.png" alt="serach loop" class="navbar-icon">
-                <img src="media/shopping-bag.png" alt="kurv"  class="navbar-icon">
-            </div>
-          </div>
+          <label for="check" class="checkbtn">
+           <i class="fa fa-bars"></i>
+          </label>
 
-          <div class="burger-container">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars" ></i>
-            </label>
-          </div>
+          <ul>
+            <li><a class="active" href="/index.html">FORSIDE</a></li>
+            <li><a href="pages/produkter.html">PRODUKTER</a></li>
+            <li><a href="pages/troejborg.html">TRØJBORG ZERO</a></li>
+            <li><a href="pages/omos.html">OM OS</a></li>
+          </ul>
+
+          <!-- <div class="nav-iconer"> -->
+            <img src="media/search.png" alt="serach loop" class="navbar-icon">
+            
+            <img src="media/shopping-bag.png" alt="kurv"  class="navbar-icon">
+          <!-- </div> -->
+
+          <!-- <input type="checkbox" id="check" />
+
+          <label for="check" class="checkbtn">
+           <i class="fa fa-bars"></i>
+          </label> -->
+
         </nav>
        </header> 
 
  <main>
- <article>
+    <a id="top"></a>
+   <article>
     <!-- forside  billede til mobil -->
-    <img src="media/img/mobilforside.png" alt="mobil forside billede" class="mobil-forside">
+    <img src="media/img/mobilforside.webp" alt="mobil forside billede" class="mobil-forside">
     <!-- forside knap -->
- <section class="forside-top">
-    <h1>UDFORSK</h1>
+   <section class="forside-top">
     <!-- forside desktop billede -->
- <div class="forside-billede">
+   <div class="forside-billede">
     <img src="media/img/forsidebillede.webp" alt="øl udvalg">
+   </div>
 
- </div>
-  <div class="forsideknap">
-    <a href="pages/produkter.html"><div class="knap">
-    <button>UDFORSK</button>
-    </a>
- </div>
-
- </section>
- <!-- midter sektion -->
- <section class="kampagne">
-     <div>
+   <div class="forsideknap">
+    <a href="pages/produkter.html" class="knap">UDFORSK</a>
+   </div>
+   </section>
+ 
+   <!-- midter sektion -->
+    <section class="kampagne">
+      <div>
         <img src="media/img/baggrund.webp" alt="Bagground" class="baggrund-image">
-     </div>
-     <h2>Stem på en ny smag!</h2>
-    <div class="kampagne-container">
+      </div>
+       <h2>Stem på en ny smag!</h2>
+       <div class="kampagne-container">
           <div class="tekstbox">
               <p id="k-tekst">Klar til at smage noget nyt? ✨
                 Vi er på jagt efter den næste 
@@ -96,59 +91,53 @@
               <span id="hashtag">#DinSmagDitValg</span>
               <img src="media/right-arrow.png" id="pil" alt="højre pil" class="højre-pil">
               </a> 
-         </div>
-        <div class="mystery-daase">
-        <img src="media/img/mystery-drink.webp" alt="kampagne drink">
-        </div>
-    </div>
-    
- </section>
- </article>
+            </div>
+             <div class="mystery-daase">
+             <img src="media/img/mystery-drink.webp" alt="kampagne drink">
+            </div>
+      </div>
+   </section>
 
- <article>
+   <article>
     <section>
-    <div class="background-color">
       <h3 id="sidste-titel">Se hvordan andre nyder deres øl!</h3>
-   <!-- linker til billder + tekst -->
-       <div class="nyheder-images">
-       <div class="background-color-images">
+       <!-- linker til billder + tekst -->
+       <div class="bottom-images">
        <ul>
-       
-        
-            <li>
-               <figure class="boxes">
-               <img src="" alt="">
-               
-             </figure>
-
-             <figure class="boxes">
-               <img src="" alt="">
-             </figure> 
-            </li>
+        <li>
+        <figure class="boxes">
+        <img src="media/img/bottom1.webp" alt="drink billede">
+        </figure>
+          
+         <li>
+         <figure class="boxes">
+         <img src="media/img/bottom2.webp" alt="drink billede2">
+         </figure> 
+        </li>
            
-           <li>
-               <figure class="boxes">
-                <img src="" alt="">
-           </li>
+        <li>
+        <figure class="boxes">
+        <img src="media/img/bottom3.webp" alt="drink billede3">
+         </li>
        </ul>
        </div>
      </div>
-    </div> 
-    </section> 
+     <a href="#top" id="scrolltotopbutton" title="Go to top">Top</a>
+      </section> 
    </article>
- </main> 
+  </main> 
+</body>
+
 
  <footer class="footer">
     <img src="media/bølger-footer.svg" alt="footer-bar">
     <ul class="footermenu">
         <li><a href="/index.html">Hjem</a></li>
-        <li><a href="/html/info.html">Info</a></li>
+        <li><a href="#">Info</a></li>
         <li><a href="#">Betingelser</a></li>
         <li><a href="#">Privat politik</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="pages/omos.html">FAQ</a></li>
     </ul>
-        <p class="copyright">Trøjborg Bryg @ 2023</p>
-  </footer>
-    </body>
-
+        <p class="copyright">TrøjborgBryg @ 2023</p>
+ </footer>
 </html>

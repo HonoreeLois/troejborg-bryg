@@ -21,7 +21,7 @@
              <img src="media/logo.png" alt="TrøjborgBryg logo" class="logo">
             <!-- </div> -->
       
-          <input type="checkbox" id="check"/>
+          <input type="checkbox" id="check" />
 
           <label for="check" class="checkbtn">
            <i class="fa fa-bars"></i>
@@ -45,6 +45,7 @@
 
  <main>
     <a id="top"></a>  
+   <article>
     <!-- forside  billede til mobil -->
     <img src="media/img/mobilforside.webp" alt="mobil forside billede" class="mobil-forside">
     <!-- forside knap -->
@@ -99,7 +100,6 @@
         <figure class="boxes">
         <img src="media/img/bottom1.webp" alt="drink billede">
         </figure>
-        </li>
           
          <li>
          <figure class="boxes">
@@ -110,16 +110,18 @@
         <li>
         <figure class="boxes">
         <img src="media/img/bottom3.webp" alt="drink billede3">
-        </figure>
          </li>
        </ul>
        </div>
+     </div>
      <a href="#top" id="scrolltotopbutton" title="Go to top">Top</a>
       </section> 
-     </article>
+   </article>
   </main> 
+</body>
 
-<footer class="footer">
+
+ <footer class="footer">
     <img src="media/bølger-footer.svg" alt="footer-bar">
     <ul class="footermenu">
         <li><a href="/index.html">Hjem</a></li>
@@ -130,9 +132,4 @@
     </ul>
         <p class="copyright">TrøjborgBryg @ 2023</p>
  </footer>
-
-</body>
-
-
- 
 </html>

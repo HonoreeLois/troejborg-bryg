@@ -1,6 +1,5 @@
-#
+# troejborgbryg.honoree.dk
 
-User-Agent: *
-Disallow:
+User-agent: *
+Disallow: /
 
-Don't block anything

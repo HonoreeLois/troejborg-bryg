@@ -479,12 +479,18 @@ input[id="graphic-2"]:checked ~ label > img {
     transition: transform 1s ease;
 }
 
+.igtekst{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .igtekst h5 {
     font-size: 3rem;
     color: #f28a33;
     text-align: center;
     margin-top: 17%;
-    margin-left: -8%;
+    margin-left: -3%;
 }
 
 .igtekst p {
@@ -493,8 +499,8 @@ input[id="graphic-2"]:checked ~ label > img {
     text-align: left;
     padding: 40px;
     font-weight: 300;
-    max-width: 47%;
-    margin-left: 23%;
+    max-width: 53%;
+    margin-left: 25%;
 }
 
 #slogan{
@@ -503,6 +509,7 @@ input[id="graphic-2"]:checked ~ label > img {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 10%;
+    margin-left: 3%;
 } 
 
 .infographic-1 img {
@@ -696,7 +703,7 @@ nav {
 }
 
 img.logo {
-    width: 26%;
+    width: 23%;
     z-index: 10;
     order: 1;
 }
@@ -723,7 +730,7 @@ nav ul {
     position: fixed;
     height: 100vh;
     background: #102e48;
-    top: 143px;
+    top: 16px;
     right: 0;
     text-align: center;
     width: 100%;
@@ -735,7 +742,7 @@ nav ul {
 
 .fa{
     position: fixed;
-    margin-top: -4%;
+    margin-top: -3%;
 }
 
 nav ul li {
@@ -757,9 +764,9 @@ nav ul li {
 .navbar-icon{
     display: flex;
     justify-content: flex-start;
-    margin-top: -2%;
+    margin-top: 0%;
     margin-right: -55%;
-    width:9%;
+    width:8%;
     
 }
 
@@ -863,22 +870,18 @@ nav {
 }
     
 img.logo {
-    width: 36%;
+    width: 31%;
     z-index: 10;
     order: 1;
 }
         
 .logo {
-    margin-top: 35.5%;
-    margin-left: 3%;
+    margin-top: 1.5%;
+    margin-left: 6%;
 }
     
 .navbar-icon {
-    display: flex;
-    justify-content: flex-start;
-    order: 2; 
-    width: 8%;
-    
+    order: 2;   
 }
       
 .checkbtn {
@@ -890,7 +893,7 @@ nav ul {
     position: fixed;
     height: 100vh;
     background: #102e48;
-    top: 143px;
+    top: 7px;
     right: 0;
     text-align: center;
     width: 100%;
@@ -903,7 +906,7 @@ nav ul {
     
 .fa{
     position: fixed;
-    margin-top: -4%;
+    margin-top: -5%;
 }
     
 nav ul li {
@@ -927,9 +930,9 @@ nav ul li {
 .navbar-icon{
     display: flex;
     justify-content: flex-start;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-right: -27%;
-    width: 13%;
+    width: 12%;
         
 }
     
@@ -991,6 +994,10 @@ h3 {
     padding: 0px 23px;
     font-size: 14px;
 }
+
+.footer ul{
+    margin-top: -12px;
+}
 .copyright {
     margin-top: 6%;
     margin-bottom: -21px;
@@ -1016,7 +1023,7 @@ h3 {
 
 #slogan {
     font-size: 21px;
-    padding-left: 40px;
+    padding-left: 1px;
 }
 .infographic-1 img {
     margin-bottom: -22%;
@@ -1042,17 +1049,17 @@ h3 {
 }
 #historie {
     padding-top: 118px;
-    margin-left: -17%;
+    margin-left: -16%;
 }
 #historie-tekst {
-    max-width: 79%;
+    max-width: 89%;
     margin-left: 1%;
     text-align: left;
 }
 
 #slogan2 {
     font-weight: 800;
-    max-width: 75%;
+    max-width: 97%;
     text-align: center;
     margin-left: -4%;
 }
@@ -1064,12 +1071,17 @@ h3 {
 }
 
 #faq{
-    margin-left: -9%;
+    margin-left: -16%;
 }
 
 #faq-tekst{
     margin-top: -2%;
-    max-width: 62%;
+    max-width: 83%;
+    margin-left: 10%;
+}
+
+h6{
+    margin-top: 1%;
 }
 
 .kontakt-section{
@@ -1077,6 +1089,14 @@ h3 {
     align-items: center;
     flex-direction: column;
     margin-left: -11%;
+}
+
+#kontakt{
+    margin-left: 1%;
+}
+
+p.kontakt-tekst{
+    margin-left: -5%;
 }
 
 }
